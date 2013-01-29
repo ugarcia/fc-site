@@ -1,0 +1,35 @@
+/* Home page styles */
+
+div.orbit-wrapper { 
+  top: -1.1em;
+}
+
+div.orbit { 
+  height: 35em !important; 
+}
+
+
+div.slideHolder {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.slideContent {
+  top: 20em;
+}
+
+div.slideContent h3 {
+  color: #ffffff;
+}
+
+
+ul.orbit-bullets li.has-thumb {
+  background-position: center !important;
+  width: 4em;
+  height: 4em;
+}
+
+ul.orbit-bullets li.has-thumb:hover {
+  background-size: 48px;
+
+}

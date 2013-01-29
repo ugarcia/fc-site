@@ -1,0 +1,19 @@
+/* MAIN PAGE STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: #eeeeee;
+}
+
+/* CONTENT DIV STYLES
+-------------------------------------------------- */
+
+div#contentDiv {
+  border:0px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 2% 0 2%;
+}

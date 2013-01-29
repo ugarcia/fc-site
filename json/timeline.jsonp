@@ -1,0 +1,174 @@
+storyjs_jsonp_data = {
+    "timeline":
+    {
+        "headline":"From the dawn of times",
+        "type":"default",
+		"text":"<p>... thinking in virtual</p>",
+        "asset":
+        {
+            "media":"img/logos/fc/fc256.png",
+            "credit":"<h1>FrontCoder</h1>",
+            "caption":""
+        },
+        "date": [
+            {
+                "startDate":"1983,9,15",
+				"endDate":"1991,6,30",
+                "headline":"Primary school - Las Viñas",
+                "text":"<p>It was nice first touch with maths ...</p>",
+                "asset":
+                {
+                    "media":"img/bio/las_vinas_img.jpg",
+                    "thumbnail":"img/bio/thumbs/las_vinas_thumb.jpg",
+                    "credit":"",
+                    "caption":"Las Viñas School, Santurtzi (Bizkaia - Spain)"
+                }
+            },
+            {
+                "startDate":"1991,10,1",
+                "endDate":"1995,6,30",
+                "headline":"Secondary Institute - Kantauri",
+                "text":"<p>It was nice first touch with ... (better not to say)</p>",
+                "asset":
+                {
+                    "media":"img/bio/kantauri_img.jpg",
+                    "thumbnail":"img/bio/thumbs/kantauri_thumb.jpg",
+                    "credit":"",
+                    "caption":"Kantauri Institute, Santurtzi (Bizkaia - Spain)"
+                }
+            },
+            {
+                "startDate":"1995,10,1",
+                "endDate":"1998,6,30",
+                "headline":"First touch with Engineering - UPV",
+                "text":"<p>So nice Engineering School, so boring subjects ...</p>",
+                "asset":
+                {
+                    "media":"img/bio/etsiit_img.jpg",
+                    "thumbnail":"img/bio/thumbs/etsiit_thumb.jpg",
+                    "credit":"",
+                    "caption":"ETSIIT - UPV University, Bilbao (Bizkaia - Spain)"
+                }
+            },
+            {
+                "startDate":"1998,7,20",
+                "endDate":"2000,6,30",
+                "headline":"Pizza Delivery - Telepizza",
+                "text":"<p>First relevant job, I won't ever forget those f**king awful motorbikes</p>",
+                "asset":
+                {
+                    "media":"img/bio/telepizza_img.jpg",
+                    "thumbnail":"img/bio/thumbs/telepizza_thumb.jpg",
+                    "credit":"",
+                    "caption":"Telepizza, Santurtzi (Bizkaia - Spain)"
+                }
+            },
+            {
+                "startDate":"1998,10,1",
+                "endDate":"2000,6,30",
+                "headline":"Secondary Institute - The electrical way",
+                "text":"<p>It was pretty easy ... I'd pay for it in the future</p>",
+                "asset":
+                {
+                    "media":"img/bio/elorrieta_img.jpg",
+                    "thumbnail":"img/bio/thumbs/elorrieta_thumb.jpg",
+                    "credit":"",
+                    "caption":"IEFPS Elorrieta, Bilbao (Bizkaia - Spain)"
+                }
+            },
+            {
+                "startDate":"2000,7,1",
+                "endDate":"2008,5,27",
+                "headline":"The Electrician Job - ELDU",
+                "text":"<p>After 4 or 5 years .. when will this end? (so boring ...)</p>",
+                "asset":
+                {
+                    "media":"img/bio/eldu_img.jpg",
+                    "thumbnail":"img/bio/thumbs/eldu_thumb.jpg",
+                    "credit":"",
+                    "caption":"ELDU S.A, Bilbao (Bizkaia - Spain)"
+                }
+            },
+            {
+                "startDate":"2000,9,15",
+                "endDate":"2009,6,30",
+                "headline":"At distance University - UNED",
+                "text":"<p>Ok, what I want to learn is IT but, is it possible this way?</p>",
+                "asset":
+                {
+                    "media":"img/bio/uned_img.jpg",
+                    "thumbnail":"img/bio/thumbs/uned_thumb.jpg",
+                    "credit":"",
+                    "caption":"UNED, Portugalete (Bizkaia - Spain)"
+                }
+            },
+            {
+                "startDate":"2008,5,28",
+                "endDate":"2009,6,26",
+                "headline":"God save the Queen - London",
+                "text":"<p>Cause world is bigger than Euskadi,  and I don't want this boring s**t anymore</p>",
+                "asset":
+                {
+                    "media":"img/bio/london_southwark_img.jpg",
+                    "thumbnail":"img/bio/thumbs/london_southwark_thumb.jpg",
+                    "credit":"",
+                    "caption":"Southwark bridge (London - UK)"
+                }
+            },
+            {
+                "startDate":"2009,7,28",
+                "endDate":"2012,5,20",
+                "headline":"Deep into IT - Terremark DC",
+                "text":"<p>I won't learn a 'chotis' but for sure I'll be able to manage a Datacenter right here</p>",
+                "asset":
+                {
+                    "media":"img/bio/terremark_img.jpg",
+                    "thumbnail":"img/bio/thumbs/terremark_thumb.jpg",
+                    "credit":"",
+                    "caption":"Global Switch Building, Madrid (Spain)"
+                }
+            },
+            {
+                "startDate":"2009,10,1",
+                "endDate":"2012,7,24",
+                "headline":"EUI/UPM - The way to go for IT",
+                "text":"<p>Supposed to be the best ... at least one of them, I learnt a lot</p>",
+                "asset":
+                {
+                    "media":"img/bio/eui_img.jpg",
+                    "thumbnail":"img/bio/thumbs/eui_thumb.jpg",
+                    "credit":"",
+                    "caption":"Escuela Universitaria Informática UPM, Madrid (Spain)"
+                }
+            },
+            {
+                "startDate":"2012,10,1",
+                "endDate":"2013,6,30",
+                "headline":"Mastery Degree - Deusto",
+                "text":"<p>More knowledge or die ... IT development won't wait for me!!</p>",
+                "asset":
+                {
+                    "media":"img/bio/deusto_img.jpg",
+                    "thumbnail":"img/bio/thumbs/deusto_thumb.jpg",
+                    "credit":"",
+                    "caption":"Universidad de Deusto, Bilbao (Bizkaia - Spain)"
+                }
+            },
+            {
+                "startDate":"2012,11,4",
+                "endDate":"2013,9,30",
+                "headline":"Development at last - Datinet",
+                "text":"<p>... life is getting beautiful ...</p>",
+                "asset":
+                {
+                    "media":"img/bio/datinet_img.jpg",
+                    "thumbnail":"img/bio/thumbs/datinet_thumb.jpg",
+                    "credit":"",
+                    "caption":"Polígono Axpe, Erandio (Bizkaia - Spain)"
+                }
+            }
+			
+        ]
+
+    }
+}
