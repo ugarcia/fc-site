@@ -23,47 +23,68 @@
 
     <div class="row">
       <div class="twelve columns">
-        <h3>Documents</h3>
-        <p>Last update: January 14, 2013.</p>
-        <hr/>
-      </div>
-    </div>
 
+        <div class="row docsHeader">
+        <div class="eight columns">
+          <h3>Documents</h3>
+        </div>
+        <div class="four columns" style='padding-top: 2em'>
+          <p>Last update: February 24, 2013.</p>
+          </div>
+          <hr/>
+        </div>
+      </div>
+  </div>
+
+  
     <div class="row">
 
-      <div class="eight columns">
-        <div class="panel ">
-          <div class="row">  
-            <div class="nne columns">
-              <p>Secondary School Graduation at Kantauri Institute</p>
-            </div>  
-            <div class="three columns">
-              <p><a href="#" class="small button">Download</a></p>
-            </div> 
-          </div> 
-        </div> 
-      </div>
+      <div class="eight columns" id='docList'> </div>
 
       <div class="four columns">
-        <h4>Getting Started</h4>
-        <p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-        <h4>Other Resources</h4>
-        <p>Once you've exhausted the fun in this document, you should check out:</p>
+        <p>Just grab the doc that interests you by clicking the 'Download' button</p>
+        <h4>Other Documents</h4>
+        <p>Other ways to retrieve info:</p>
         <ul class="disc">
-          <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-          <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-          <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+          <li>Check out the <a href="Javascript: document.location.href = '../OneWeb/index.html'"> OneWeb </a> site <br /> There might be more documents</li>
+           <li><a class='contentLink' id='contact' href="Javascript: selectNavBarItem('contact.html')">Contact</a > with us</li>
         </ul>
       </div>
 
     </div>
- 
+  
+  <!-- BLOG TEMPLATE {{HANDLEBARS}}
+        ================================================== -->
+        <script type="text/x-handlebars-template" id="doc-template">
+              
+         <div class="panel">
+          <div class="row">  
+            <div class="seven columns">
+              <p>{{text}}</p>
+            </div>  
+             <div class="two columns">
+              <p>{{date}}</p>
+            </div>
+            <div class="three columns">
+              <p><a href="{{filePath}}" class="small button downloadDoc">Download</a></p>
+            </div> 
+          </div> 
+        </div> 
+
+        </script>
+
     <!-- SCRIPTS
     ================================================== -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script>  
-    <script src="js/foundation_init.js"></script> 
+
+    <script src="js/spine.min.js"></script>
+    <script src="js/ajax.js"></script>
+
+    <script src="js/handlebars.min.js"></script>
+    <script src="js/doc_model.js"></script> 
+    <script src="js/doc_view.js"></script> 
+    <script src="js/doc_controller.js"></script> 
     
   </body>
 </html>

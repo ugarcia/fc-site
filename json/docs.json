@@ -1,0 +1,27 @@
+[
+    {
+        "text": "Secondary School Certificate",
+        "date": "1995",
+        "filePath": "/Site/resources/docs/sec_school_title.pdf"
+    },
+    {
+        "text": "Electrotechnical Installations Title",
+        "date": "2000",
+        "filePath": "/Site/resources/docs/elec_title.pdf"
+    },
+    {
+        "text": "Career project docs",
+        "date": "2012",
+        "filePath": "/Site/resources/docs/naughtybots.pdf"
+    },
+    {
+        "text": "Career project slides",
+        "date": "2012",
+        "filePath": "/Site/resources/docs/naughtybots.pps"
+    },
+    {
+        "text": "IT Systems Engineering Title",
+        "date": "2012",
+        "filePath": "/Site/resources/docs/systems_eng_title.pdf"
+    }
+]

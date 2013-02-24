@@ -18,15 +18,30 @@
     };
 
     function SiteApp() {
-      var _this = this;
+      var lastContent, view,
+        _this = this;
       SiteApp.__super__.constructor.apply(this, arguments);
       SiteModel.bind("ajaxSuccess", function(status, xhr) {
-        return _this.log("success loading sites");
+        var lastContent;
+        _this.log("success loading sites");
+        lastContent = JSON.parse(sessionStorage.getItem("lastVisitedSiteContent"));
+        if (lastContent === null) {
+          return setTimeout(function() {
+            return $('#home').click();
+          }, 1000);
+        }
       });
       SiteModel.bind("ajaxError", function(record, xhr, settings, error) {
         return _this.log(error);
       });
       SiteModel.fetch();
+      lastContent = JSON.parse(sessionStorage.getItem("lastVisitedSiteContent"));
+      if (lastContent !== null) {
+        view = new SiteView({
+          siteModel: lastContent
+        });
+        this.content.html(view.render().el);
+      }
     }
 
     SiteApp.prototype.changeContent = function(e) {
@@ -42,9 +57,10 @@
       view = {};
       SiteModel.each(function(item) {
         if (item.name === $(targ).attr('id')) {
-          return view = new SiteView({
+          view = new SiteView({
             siteModel: item
           });
+          return sessionStorage.setItem("lastVisitedSiteContent", JSON.stringify(item));
         }
       });
       return this.content.html(view.render().el);

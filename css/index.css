@@ -17,3 +17,39 @@ div#contentDiv {
   background-color: #ffffff;
   padding: 0 2% 0 2%;
 }
+
+.top-bar ul > li * {
+    color: #FFFFFF;
+    display: block;
+    font-size: 9px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.top-bar ul > li a:not(.button) {
+    font-size: 12px;
+    margin: 0;
+}
+
+.top-bar {
+  height: 92px;
+}
+
+@media only screen and (max-width: 940px) {
+   .top-bar { 
+      height: 45px; 
+   }
+
+   .top-bar ul > li.name:hover { 
+      background: #222222;
+    }
+
+     .top-bar section ul > li.name,
+   .top-bar section ul > li.name * {
+      height:20px;
+      line-height: 20px;
+   }
+}

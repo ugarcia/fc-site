@@ -33,3 +33,5 @@ RewriteBase   /Site
 RewriteRule ^blogmodels/(.*)$ php/blog.php?blog=$1 [L,QSA]
 RewriteRule ^blogmodels$ php/blog.php
 
+RewriteRule ^docmodels$ json/docs.json
+

@@ -47,7 +47,7 @@
             <!-- Title Area -->
             <li>
               <h1>
-                <a class="contentLink" id='home' href="Javascript: void(0)">
+                <a class="contentLink" id='home' href="Javascript: selectNavBarItem('home.html')">
                   Front Site
                 </a>
               </h1>
@@ -77,15 +77,13 @@
             <!-- Left Nav Section -->
             <ul class="left">
               <li class="divider"></li>
-              <li><a class="active contentLink" id='blog' href="Javascript: void(0)">Blog</a></li>
+              <li><a class="active contentLink" id='blog' href="Javascript: selectNavBarItem('blog.html')">Blog</a></li>
               <li class="divider"></li>
-              <li><a class='contentLink' id='bio' href="Javascript: void(0)">Bio</a></li>
+              <li><a class='contentLink' id='bio' href="Javascript: selectNavBarItem('bio.html')">Bio</a></li>
               <li class="divider"></li>
-              <li><a class='contentLink' id='docs' href="Javascript: void(0)">Docs</a></li>
+              <li><a class='contentLink' id='docs' href="Javascript: selectNavBarItem('docs.html')">Docs</a></li>
               <li class="divider"></li>
-              <li><a class='contentLink' id='programming' href="Javascript: void(0)">Dev</a></li>
-              <li class="divider"></li>
-              <li><a class='contentLink' id='maps' href="Javascript: void(0)">Maps</a></li>
+              <li><a class='contentLink' id='programming' href="Javascript: selectNavBarItem('programming.html')">Dev</a></li>
               <li class="divider"></li>
               <li><a href="Javascript: document.location.href = '../OneWeb/index.html'">OneWeb</a></li>
               <li class="divider"></li>
@@ -94,9 +92,9 @@
              <!-- Right Nav Section -->
             <ul class="right">
               <li class="divider"></li>
-              <li><a class='contentLink' id='contact' href="Javascript: void(0)">Contact</a></li>
+              <li><a class='contentLink' id='contact' href="Javascript: selectNavBarItem('contact.html')">Contact</a></li>
               <li class="divider"></li>
-              <li><a class='contentLink' id='about' href="Javascript: void(0)">About</a></li>
+              <li><a class='contentLink' id='about' href="Javascript: selectNavBarItem('about.html')">About</a></li>
               <li class="divider"></li>
             </ul>
 
@@ -106,20 +104,61 @@
 
 
 
-        <!-- CONTENT FRAME
+        <!-- CONTENT 
         ================================================== -->
-        <div id="contentDiv">
-          <!--
-          <iframe id="contentFrame" style="border:0px; width: 100%; background-color: #ffffff;" src="blog.html">
-          </iframe>
-          -->
+   <div class="row" style='background-color: #ffffff; margin:0'>
+      <div id='loginDiv' class='six columns'>
+        <h4>Login</h4>
+        <form id='´loginForm' onsubmit="return validateLogin()">
+          <table id='loginTable'>
+              <tr>
+                  <td> <label for="loginUser">Login</label> </td>
+                  <td>  <input id="loginUser" type="text" placeholder="user" required tabindex="1">   </td>
+                  <td rowspan='2' style="vertical-align: middle">
+                      <input id="loginSubmit" type="submit" value="Submit" tabindex="3" style="padding: 10px">
+                  </td>
+              </tr>
+              <tr>
+                  <td> <label for="loginPassword">Password</label>  </td>
+                  <td>  <input id="loginPassword" type="password" placeholder="password" required tabindex="2">   </td>
+              </tr>
+          </table>
+          </form>
+      </div>
+    
+  
+        <div id = 'registerDiv' class='six columns'>
+          <h4>Register</h4>
+          <form id='registerForm' onsubmit="return validateRegister()">
+            <table class = "stretched" id="registerTable">
+                    <tr>
+                        <td> <label for="registerUser">User</label>  </td>
+                        <td>  <input id="registerUser" type="text" placeholder="user" autofocus required> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="registerPassword">Password</label></td>
+                        <td><input id="registerPassword" type="password" placeholder="password" required> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="confirmPassword">Confirm Password</label> </td>
+                        <td> <input id="confirmPassword" type="password" placeholder="confirm password" required>  </td>
+                    </tr>
+                    <tr>
+                        <td>  <label for="registerEmail">Email</label> </td>
+                        <td>  <input id="registerEmail" type="email" placeholder="email@domain" required> </td>
+                    </tr>
+                    <tr>
+                        <td id ="registerSubmitTd" colspan="2" style="text-align: center">
+                            <input id="registerSubmit" type="submit" value="Submit" style="padding: 10px">
+                        </td>
+                    </tr>                 
+                
+            </table>
+            </form>
         </div>
+      </div>
 
-        <!-- CONTENT TEMPLATE {{HANDLEBARS}}
-        ================================================== -->
-        <script type="text/x-handlebars-template" id="content-template">
-            {{{content}}}
-        </script>
+
 
 
         <!-- FOOTER
@@ -137,20 +176,26 @@
 
     <!-- SCRIPTS
     ================================================== -->
-    <script src="js/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="js/handlebars.min.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/iframeheight.js"></script>
     <script src="js/properties.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/session.js"></script> 
     <script src="js/index.js"></script> 
-    
+    <script src="js/foundation_init.js"></script>
     <script src="js/spine.min.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/site_model.js"></script>
     <script src="js/site_view.js"></script>
     <script src="js/site_controller.js"></script>
-  
-  <script src="js/foundation_init.js"></script>
+
+
+
+    <script src='js/md5.js'></script> 
+    <script src='js/login.js'></script> 
+
   </body>
 
 </html>

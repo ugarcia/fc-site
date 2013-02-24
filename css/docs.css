@@ -2,6 +2,14 @@
 -------------------------------------------------- */
 
 div.panel {
-  margin-bottom: 0px;
+  margin-bottom: 0.5em;
   padding-bottom: 0px;
+}
+
+div#docList {
+    margin-bottom: 1em;
+}
+
+div.docsHeader div * {
+    margin-bottom: 0;
 }

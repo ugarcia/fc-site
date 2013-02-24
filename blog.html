@@ -29,55 +29,66 @@
         <div>
             <h3>Welcome to Front-Blog</h3>
             <hr>
-            <form id='blogForm' name='blogForm' enctype="multipart/form-data" action='php/blog.php' target='dummyFrame' method='post'>
-                <fieldset>
-                    <legend>New Blog</legend>
-                    <div class="row">
-                        <div class="one columns">
-                            <label for name='titleInput'>Title</label>
-                        </div>
-                        <div class="nine columns end">
-                            <input type='text' id='titleInput' name='titleInput' placeholder='Enter blog title' required/>
-                        </div>
-                    </div>
+            <ul class="accordion">
+              <li >
+                <div class="title">
+                  <h5>New Blog</h5>
+                </div>
+                <div class="content">
+                    <form id='blogForm' name='blogForm' enctype="multipart/form-data" action='php/blog.php' target='dummyFrame' method='post'>
+                        <fieldset>
+                            <legend>Post a new one</legend>
+                            <div class="row">
+                                <div class="one columns">
+                                    <label for name='titleInput'>Title</label>
+                                </div>
+                                <div class="nine columns end">
+                                    <input type='text' id='titleInput' name='titleInput' placeholder='Enter blog title' required/>
+                                </div>
+                            </div>
 
-                    <fieldset>
-                        <legend>Add Image(s)</legend>
-                        <div class="row">
-                            <div class="two columns">
-                                <label for name='fsImageInput'>From FileSystem</label>
-                            </div>
-                            <div class="eight columns">
-                                <input type='file' id='fsImageInput' name='fsImageInput[]'  size='60' multiple/>
-                                <iframe id='dummyFrame' name='dummyFrame' style='display:none'></iframe>
-                            </div>
-                             <div class="two columns">
-                                <input type='submit' id='addImage' name='addImage' value='Add Image(s)'/>
-                            </div>
-                        </div>
+                            <fieldset>
+                                <legend>Add Image(s)</legend>
+                                <div class="row">
+                                    <div class="two columns">
+                                        <label for name='fsImageInput'>From FileSystem</label>
+                                    </div>
+                                    <div class="eight columns">
+                                        <input type='file' id='fsImageInput' name='fsImageInput[]'  size='60' multiple/>
+                                        <iframe id='dummyFrame' name='dummyFrame' style='display:none'></iframe>
+                                    </div>
+                                     <div class="two columns">
+                                        <input type='submit' id='addImage' name='addImage' value='Add Image(s)'/>
+                                    </div>
+                                </div>
 
-                        <div class="row">
-                            <div class="two columns">
-                                <label for name='urlImageInput'>From URL</label>
-                            </div>
-                            <div class="eight columns end">
-                                <input type='text' id='urlImageInput' name='urlImageInput' placeholder='Type URL in' />
-                            </div>
-                        </div>
-                        
-                    </fieldset>
-                    <p>Text</p>
-                    <div contenteditable="true"class='editableDiv' id='blogInput'></div>
-                    <input type='button' id='addBlog' name='addBlog' value='Submit Blog'/>
+                                <div class="row">
+                                    <div class="two columns">
+                                        <label for name='urlImageInput'>From URL</label>
+                                    </div>
+                                    <div class="eight columns end">
+                                        <input type='text' id='urlImageInput' name='urlImageInput' placeholder='Type URL in' />
+                                    </div>
+                                </div>
+                                
+                            </fieldset>
+                            <p>Text</p>
+                            <div contenteditable="true"class='editableDiv' id='blogInput'></div>
+                            <input type='button' id='addBlog' name='addBlog' value='Submit Blog'/>
 
-                </fieldset>
-            </form>
-        </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </li>
+        </ul>
+      </div>
         
         <div id="blogContent">
             <ul id='blogList'></ul>
         </div>
 
+    </div>
+</div>
         <!-- BLOG TEMPLATE {{HANDLEBARS}}
         ================================================== -->
         <script type="text/x-handlebars-template" id="blogContent-template">
@@ -102,15 +113,15 @@
 
     <!-- SCRIPTS
     ================================================== -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/handlebars.min.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/foundation_init.js"></script>
     <script src="js/spine.min.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/blog_model.js"></script>
     <script src="js/blog_view.js"></script>
     <script src="js/blog_controller.js"></script>
+    <script src="js/foundation_init.js"></script>
 
   </body>
 
