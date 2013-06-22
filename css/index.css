@@ -5,7 +5,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  background-color: #eeeeee;
+  background-color: inherit;
 }
 
 /* CONTENT DIV STYLES
