@@ -156,8 +156,8 @@ storyjs_jsonp_data = {
             },
             {
                 "startDate":"2012,11,4",
-                "endDate":"2013,9,30",
-                "headline":"Development at last - Datinet",
+                "endDate":"2013,7,31",
+                "headline":"Development at last - Datinet / Deloitte",
                 "text":"<p>... life is getting beautiful ...</p>",
                 "asset":
                 {
@@ -166,7 +166,20 @@ storyjs_jsonp_data = {
                     "credit":"",
                     "caption":"Polígono Axpe, Erandio (Bizkaia - Spain)"
                 }
-            }
+            },
+                 {
+                     "startDate":"2013,8,1",
+                     "endDate":"2013,9,30",
+                     "headline":"It's all about games - Iron Belt Studios",
+                     "text":"<p>The change was obvious</p>",
+                     "asset":
+                     {
+                         "media":"img/bio/ironbelt_img.png",
+                         "thumbnail":"img/bio/thumbs/ironbelt_thumb.png",
+                         "credit":"",
+                         "caption":"Rekalde, Bilbao (Bizkaia - Spain)"
+                     }
+                 }
 			
         ]
 
