@@ -20,8 +20,23 @@
         "filePath": "/Site/resources/docs/naughtybots.pps"
     },
     {
-        "text": "IT Systems Engineering Title",
-        "date": "2012",
+        "text": "IT Systems Engineering Title (prov.)",
+        "date": "2013",
         "filePath": "/Site/resources/docs/systems_eng_title.pdf"
+    },
+    {
+        "text": "Mastery Degree Title",
+        "date": "2012",
+        "filePath": "/Site/resources/docs/master_title.pdf"
+    },
+    {
+        "text": "Last updated Skills",
+        "date": "",
+        "filePath": "/Site/resources/docs/skills.pdf"
+    },
+    {
+        "text": "Last updated CV",
+        "date": "",
+        "filePath": "/Site/resources/docs/cv.pdf"
     }
 ]
