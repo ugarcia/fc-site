@@ -195,7 +195,7 @@ storyjs_jsonp_data = {
             },
             {
                    "startDate":"2014,3,17",
-                   "endDate":"2014,6,4",
+                   "endDate":"2015,3,16",
                    "headline":"A new Country, a new Freelancer - Fanmiles GmbH",
                    "text":"<p>Zwei bier bitte!!</p>",
                    "asset":
@@ -204,6 +204,19 @@ storyjs_jsonp_data = {
                        "thumbnail":"img/bio/thumbs/fanmiles_thumb.png",
                        "credit":"",
                        "caption":"Rosenthaler Straße (Berlin - Deutschland)"
+                   }
+            },
+            {
+                   "startDate":"2015,3,17",
+                   "endDate":"2015,7,4",
+                   "headline":"Back to permanent, back to games - Sandbox GmbH",
+                   "text":"<p>Play Albion Online!!</p>",
+                   "asset":
+                   {
+                       "media":"img/bio/sandbox_kulturbrauerei_img.png",
+                       "thumbnail":"img/bio/thumbs/sandbox_kulturbrauerei_thumb.png",
+                       "credit":"",
+                       "caption":"Kultur Brauerei (Berlin - Deutschland)"
                    }
             }
 			
