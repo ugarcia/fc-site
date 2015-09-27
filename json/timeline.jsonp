@@ -221,8 +221,8 @@ storyjs_jsonp_data = {
             },
             {
                   "startDate":"2015,8,1",
-                  "endDate":"2015,11,4",
-                  "headline":"Let's make spin the games wheel!!  - GamewheelH",
+                  "endDate":"",
+                  "headline":"Let's make spin the games wheel!!  - Gamewheel",
                   "text":"<p>Once again, gamifying the world</p>",
                   "asset":
                   {
