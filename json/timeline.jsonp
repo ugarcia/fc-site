@@ -218,8 +218,20 @@ storyjs_jsonp_data = {
                        "credit":"",
                        "caption":"Kultur Brauerei (Berlin - Deutschland)"
                    }
+            },
+            {
+                  "startDate":"2015,8,1",
+                  "endDate":"2015,11,4",
+                  "headline":"Let's make spin the games wheel!!  - GamewheelH",
+                  "text":"<p>Once again, gamifying the world</p>",
+                  "asset":
+                  {
+                      "media":"img/bio/gamewheel_colonia_nova.png",
+                      "thumbnail":"img/bio/thumbs/gamewheel_colonia_nova_thumb.png",
+                      "credit":"",
+                      "caption":"Colonia Nova (Berlin - Deutschland)"
+                  }
             }
-			
         ]
 
     }
